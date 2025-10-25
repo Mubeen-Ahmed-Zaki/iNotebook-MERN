@@ -19,6 +19,13 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 app.use('/api/status',require('./routes/status'))
 
+app.get('/', (res, req) => {
+  res.send({
+    activestatus: true,
+    error: false,
+  })
+})
+
 app.listen(port, () => {
   console.log(`iNotebook backend listening on http://localhost:${port}`)
 })
