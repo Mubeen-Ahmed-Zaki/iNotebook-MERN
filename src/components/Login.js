@@ -24,7 +24,7 @@ const Login = () => {
     const [stats, setStats] = useState({ users: 0, notes: 0, uptime: 0, support: 0 });
     // Stats fetch
     useEffect(() => {
-        fetch("http://localhost:5000/api/status/stats")
+        fetch("https://i-notebook-mern-five.vercel.app/api/status/stats")
             .then((res) => res.json())
             .then((data) => setStats(data))
             .catch((err) => console.error("Error fetching stats:", err));
@@ -70,7 +70,7 @@ const Login = () => {
         setErrors({});
 
         try {
-            const res = await fetch("http://localhost:5000/api/auth/login", {
+            const res = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const Login = () => {
                 // Save token from backend
                 localStorage.setItem("token", json.authToken);
 
-                const userRes = await fetch("http://localhost:5000/api/auth/getuser", {
+                const userRes = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/getuser", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
