@@ -150,7 +150,7 @@ import NoteContext from "./noteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-  const host = "https://i-notebook-mern-five.vercel.app/"; // apna backend URL lagao
+  const host = "https://i-notebook-mern-five.vercel.app"; // apna backend URL lagao
   const notesInitial = [];
   const [notes, setNotes] = useState(notesInitial);
 
