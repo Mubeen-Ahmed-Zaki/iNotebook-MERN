@@ -118,7 +118,7 @@ const Personal = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/getuser", {
+        const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/getuser", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -147,7 +147,7 @@ const Personal = () => {
   const handleProfileSave = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+      const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/updateuser", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -181,7 +181,7 @@ const Personal = () => {
   const handlePasswordSave = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+      const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/updateuser", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -376,7 +376,7 @@ export default Personal;
 //   useEffect(() => {
 //     const fetchUser = async () => {
 //       try {
-//         const response = await fetch("http://localhost:5000/api/auth/getuser", {
+//         const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/getuser", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -405,7 +405,7 @@ export default Personal;
 //   const handleProfileSave = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await fetch("http://localhost:5000/api/auth/updateuser", {
+//       const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/updateuser", {
 //         method: "PUT",
 //         headers: {
 //           "Content-Type": "application/json",
