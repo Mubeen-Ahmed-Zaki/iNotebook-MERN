@@ -19,7 +19,7 @@ const AdminFetchAllUsers = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:5000/api/auth/fetchallusers", {
+        const res = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/fetchallusers", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
