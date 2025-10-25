@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <nav className="navbar custom-navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
             <div className="container-fluid">
-                <Link className="navbar-brand">
+                <Link className="navbar-brand" to="/home">
                     <div className="brand-icon">
                         <i className="fas fa-book"></i>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../components Stylesheet/Footer.css'
 
 const Footer = () => {
@@ -11,10 +12,9 @@ const Footer = () => {
                         <div className="footer-section">
                             <h3 className="footer-title">Company</h3>
                             <ul className="footer-links">
-                                <li><a href="#home"><i className="fas fa-home"></i> Home</a></li>
-                                <li><a href="#notes"><i className="fas fa-sticky-note"></i> New Notes</a></li>
-                                <li><a href="#about"><i className="fas fa-info-circle"></i> About us</a></li>
-                                <li><a href="#started"><i className="fas fa-play-circle"></i> Get started</a></li>
+                                <li><Link to="/home"><i className="fas fa-home"></i> Home</Link></li>
+                                <li><Link to="/notes"><i className="fas fa-sticky-note"></i> Notes</Link></li>
+                                <li><Link to="/signup"><i className="fas fa-play-circle"></i> Get started</Link></li>
                             </ul>
                         </div>
 
@@ -22,8 +22,8 @@ const Footer = () => {
                         <div className="footer-section">
                             <h3 className="footer-title">Services</h3>
                             <ul className="footer-links">
-                                <li><a href="#your-notes"><i className="fas fa-file-alt"></i> Your Notes</a></li>
-                                <li><a href="#new-note"><i className="fas fa-plus-circle"></i> New Note</a></li>
+                                <li><Link to="/notes"><i className="fas fa-file-alt"></i> Your Notes</Link></li>
+                                <li><Link to="/addNote"><i className="fas fa-plus-circle"></i> New Note</Link></li>
                             </ul>
                         </div>
 
@@ -31,8 +31,8 @@ const Footer = () => {
                         <div className="footer-section">
                             <h3 className="footer-title">Account</h3>
                             <ul className="footer-links">
-                                <li><a href="#signin"><i className="fas fa-sign-in-alt"></i> Sign-in</a></li>
-                                <li><a href="#join"><i className="fas fa-user-plus"></i> Join Free</a></li>
+                                <li><Link to="/signin"><i className="fas fa-sign-in-alt"></i> Sign-in</Link></li>
+                                <li><Link to="/signup"><i className="fas fa-user-plus"></i> Join Free</Link></li>
                             </ul>
                         </div>
 
@@ -40,10 +40,7 @@ const Footer = () => {
                         <div className="footer-section">
                             <h3 className="footer-title">Top Categories</h3>
                             <ul className="footer-links">
-                                <li><a href="#tent"><i className="fas fa-campground"></i> Tent Notes</a></li>
-                                <li><a href="#rv"><i className="fa-solid fa-caravan"></i>RV and Van Notes</a></li>
-                                <li><a href="#canoe"><i className="fas fa-ship"></i> Canoe Notes</a></li>
-                                <li><a href="#survival"><i className="fas fa-mountain"></i> Survivalist Notes</a></li>
+                                <li><Link to="/notes"><i className="fas fa-campground"></i> Tent Notes</Link></li>
                             </ul>
                         </div>
 
@@ -57,21 +54,21 @@ const Footer = () => {
                                 An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbance
                             </p>
                             <div className="social-icons">
-                                <a href="#facebook" className="social-icon facebook">
+                                <Link to="https://www.facebook.com" target='_blank' className="social-icon facebook">
                                     <i className="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#twitter" className="social-icon twitter">
+                                </Link>
+                                <Link to="https://www.twitter.com" target='_blank' className="social-icon twitter">
                                     <i className="fab fa-twitter"></i>
-                                </a>
-                                <a href="#instagram" className="social-icon instagram">
+                                </Link>
+                                <Link to="https://www.instagram.com" target='_blank' className="social-icon instagram">
                                     <i className="fab fa-instagram"></i>
-                                </a>
-                                <a href="#linkedin" className="social-icon linkedin">
+                                </Link>
+                                <Link to="https://www.linkedin.com/in/mubeen-zaki-2157511b1" target='_blank' className="social-icon linkedin">
                                     <i className="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#youtube" className="social-icon youtube">
+                                </Link>
+                                <Link to="https://www.youtube.com" target='_blank' className="social-icon youtube">
                                     <i className="fab fa-youtube"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
