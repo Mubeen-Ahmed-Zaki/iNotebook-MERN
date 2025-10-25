@@ -8,7 +8,7 @@ const About = () => {
 
   //  Stats fetch
   useEffect(() => {
-    fetch("http://localhost:5000/api/status/stats")
+    fetch("https://i-notebook-mern-five.vercel.app/api/status/stats")
       .then((res) => res.json())
       .then((data) => setStats(data))
       .catch((err) => console.error("Error fetching stats:", err));
