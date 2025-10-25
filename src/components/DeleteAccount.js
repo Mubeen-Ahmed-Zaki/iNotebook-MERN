@@ -13,7 +13,7 @@ const DeleteAccount = () => {
   // API call for delete
   const handleDeleteConfirm = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/deleteuser", {
+      const response = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/deleteuser", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
