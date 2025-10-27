@@ -70,7 +70,7 @@ const Login = () => {
         setErrors({});
 
         try {
-            const res = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/login", {
+            const res = await fetch("https://i-notebook-mern-4odf4fm0w-mubeen-ahmed-zakis-projects.vercel.app/api/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const Login = () => {
                 // Save token from backend
                 localStorage.setItem("token", json.authToken);
 
-                const userRes = await fetch("https://i-notebook-mern-five.vercel.app/api/auth/getuser", {
+                const userRes = await fetch("https://i-notebook-mern-4odf4fm0w-mubeen-ahmed-zakis-projects.vercel.app/api/auth/getuser", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
