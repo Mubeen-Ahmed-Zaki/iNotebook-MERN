@@ -21,7 +21,7 @@ app.use('/api/notes',require('./routes/notes'))
 app.use('/api/status',require('./routes/status'))
 
 app.get("/", (req, res) => {
-  res.send("Backend is live and working fine!");
+  res.send("Backend is working fine!");
 });
 
 app.listen(port, () => {
