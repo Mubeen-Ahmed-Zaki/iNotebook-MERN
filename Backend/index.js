@@ -16,13 +16,13 @@ app.use(express.json());
 
 //  Available Routes
 
-app.get("/", (req, res) => {
-  res.send("Backend is live and working fine!");
-});
-
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 app.use('/api/status',require('./routes/status'))
+
+app.get("/", (req, res) => {
+  res.send("Backend is live and working fine!");
+});
 
 app.listen(port, () => {
   console.log(`iNotebook backend listening on http://localhost:${port}`)
